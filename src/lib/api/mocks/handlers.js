@@ -60,4 +60,18 @@ export const handlers = [
       ]),
     );
   }),
+  // https://foo.com/api/v1/offers/:id/
+  // rest.get(apiConfig.offerDetails, (_req, res, ctx) => {
+  rest.get('https://foo.com/api/v1/offers/test/', (_req, res, ctx) => {
+    return res(
+      ctx.status(200),
+      ctx.json({
+        id: 'f350c299-fbb0-4616-9a4c-eb8caccf42d7',
+        city: 'Zakopane',
+        country: 'Poland',
+        title: 'Cosy apartment',
+        photo: 'https://picsum.photos/seed/picsum/200/300',
+      }),
+    );
+  }),
 ];

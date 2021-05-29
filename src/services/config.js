@@ -7,6 +7,9 @@ const {
 const baseURL = API_URL;
 const prefix = `${baseURL}/api/v1`;
 
+// https://foo.com/api/v1/offers/
+// https://foo.com/api/v1/offers/{id}/
+
 const apiConfig = {
   auth: `${prefix}/auth/token/`,
   authTokenRefresh: `${prefix}/auth/token/refresh/`,

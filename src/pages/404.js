@@ -2,14 +2,14 @@ import { Text } from '@chakra-ui/react';
 
 import BaseLayout from '../components/Layouts/BaseLayout';
 
-function About() {
+function NotFound() {
   return (
     <BaseLayout>
-      <Text fontSize="3xl" as="h1">
-        Hello from about page
+      <Text as="h1" fontSize="3xl">
+        404 - Not found
       </Text>
     </BaseLayout>
   );
 }
 
-export default About;
+export default NotFound;
