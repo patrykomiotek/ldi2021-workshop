@@ -10,7 +10,8 @@
     "test": "jest",
     "lint": "yarn lint:js",
     "lint:js": "eslint --ext js,jsx",
-    "lint:fix": "eslint ./components/**/*.{js,jsx} --fix"
+    "lint:fix": "eslint ./components/**/*.{js,jsx} --fix",
+    "msw-update": "npx msw init public"
   },
   "dependencies": {
     "@chakra-ui/icons": "^1.0.13",
@@ -46,7 +47,11 @@
     "jest-dom": "^4.0.0",
     "jest-watch-typeahead": "^0.6.4",
     "lint-staged": "^11.0.0",
+    "msw": "^0.29.0",
     "prettier": "^2.3.0",
     "pretty-quick": "^3.1.0"
+  },
+  "msw": {
+    "workerDirectory": "public"
   }
 }
